@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="section" class="text-center bg-gray-50 p-40">
+        <h1 class="text-5xl font-bold mb-5">D DADY BANK LTD.</h1>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-3 gap-4 pb-14">
+                <div class="bg-green-100 py-5 space-y-2">
+                    <h3 class="text-purple-400 font-semibold text-3xl">Deposite</h3>
+                    <h2 class="text-5xl text-white font-semibold">$ <span id="deposite-money">0.00</span></h2>
+                </div>
+                <div class="bg-yellow-100 py-5 space-y-2">
+                    <h3 class="text-purple-400 font-semibold text-3xl">Widthdrow</h3>
+                    <h2 class="text-5xl text-white font-semibold">$ <span id="withdrow-money">0.00</span></h2>
+                </div>
+                <div class="bg-pink-100 py-5 space-y-2">
+                    <h3 class="text-purple-400 font-semibold text-3xl">Total Balace</h3>
+                    <h2 class="text-5xl text-white font-semibold">$ <span id="total-money">0.00</span></h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-300 py-7 space-y-5">
+                    <h2 class="text-white text-3xl font-semibold">Add Deposite</h2>
+                    <input id="deposite-field" class="rounded-md block mx-auto text-2xl px-2 py-1" type="text" placeholder="Add money">
+                    <button id="add-deposite" class="rounded-md bg-red-300 text-white text-3xl px-3 py-1">Add</button>
+                </div>
+                <div class="bg-green-300 py-7 space-y-5">
+                    <h2 class="text-white text-3xl font-semibold">Widthdrow Money</h2>
+                    <input id="widthdrow-feild" class="rounded-md block mx-auto text-2xl px-2 py-1" type="text" placeholder="withdrow money">
+                    <button id="add-widthdrow" class="rounded-md bg-red-300 text-white text-3xl px-3 py-1">Widthdrow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bank.js"></script>
+</body>
+</html>
